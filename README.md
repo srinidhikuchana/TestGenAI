@@ -1,23 +1,26 @@
-# 🧪 TestGenAI
+# TestGenAI 🧪
 
-**AI-Powered Python Unit Test Generator**
+TestGenAI is a small project I built to make writing unit tests a little easier.
 
-TestGenAI is a lightweight developer productivity tool that automatically generates Python unit tests using AI.
+While working on Python projects, I noticed that writing test cases for every function can get repetitive. So I wanted to try building a tool that could generate basic test cases automatically.
 
-## Features
-- Generate pytest unit tests from Python code
-- Cover normal and edge cases
-- View generated tests instantly
-- Download generated test files
-- Simple Streamlit interface
+The app takes Python code as input and uses the OpenRouter API to generate pytest test cases.
+
+## What it does
+
+- Takes Python code as input
+- Generates unit tests using AI
+- Includes normal and edge cases
+- Lets users download the generated tests as a Python file
 
 ## Tech Stack
+
 - Python
 - Streamlit
 - OpenRouter API
 - Pytest
 
-## Installation
+## Running locally
 
 Clone the repository:
 
@@ -26,38 +29,44 @@ git clone https://github.com/srinidhikuchana/TestGenAI.git
 cd TestGenAI
 ```
 
-Install dependencies:
+Install the required packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Set the `OPENROUTER_API_KEY` environment variable and run:
+Set your OpenRouter API key as an environment variable named `OPENROUTER_API_KEY`.
+
+Start the application:
 
 ```bash
 streamlit run app.py
 ```
 
-## How It Works
+## How to use
 
-1. Paste a Python function into the application.
+1. Paste a Python function into the text area.
 2. Click **Generate Tests**.
-3. AI generates suggested pytest test cases.
-4. Review and download the generated tests.
-5. Run the tests locally using pytest.
+3. Wait for the generated test cases.
+4. Review the tests and download the file if needed.
 
-## Future Improvements
-- Automated test execution
+The generated tests can be run locally using pytest. They may need some changes depending on the code, since AI-generated tests aren't always correct.
+
+## What I learned
+
+This project helped me practice working with APIs, handling responses, and building a simple interface with Streamlit.
+
+I also got to explore how AI can be used for small developer tools instead of just chat applications.
+
+## Things I'd like to add
+
+- Support for more programming languages
+- An option to run tests directly
+- Test coverage information
 - GitHub repository integration
-- Test coverage reporting
-- Support for multiple programming languages
 
 ## Author
 
-**Sri Nidhi Kuchana**
+Sri Nidhi Kuchana
 
 [GitHub](https://github.com/srinidhikuchana) | [LinkedIn](https://www.linkedin.com/in/srinidhikuchana)
-
-## Disclaimer
-
-AI-generated tests should be reviewed before execution. TestGenAI does not automatically verify or execute generated tests.
