@@ -1,4 +1,4 @@
-# TestGenAI 🧪
+# TestGenAI
 
 TestGenAI is a small project I built to make writing unit tests a little easier.
 
