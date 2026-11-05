@@ -4,7 +4,7 @@ import requests
 import os
 
 st.set_page_config(page_title="TestGenAI", page_icon="🧪")
-st.title("🧪 TestGenAI")
+st.title("TestGenAI")
 st.write("Generate Python unit tests instantly using AI!")
 
 api_key = os.getenv("OPENROUTER_API_KEY")
